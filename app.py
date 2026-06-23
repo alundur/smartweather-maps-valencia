@@ -89,8 +89,6 @@ with tab_ciudadano:
         st.success(f"📅 **Date:** {hora_actual.strftime('%d-%m-%Y')}\n\n⌚ **Time:** {hora_actual.strftime('%H:%M:%S')}")
         
         st.markdown("---")
-        
-        st.markdown("---")
         st.header("🍂 Seasonal Optimization")
         estacion = st.radio("Urban Experience Mode:", ["Cool Routine (Summer)", "Sunny Paths (Winter)"])
         
