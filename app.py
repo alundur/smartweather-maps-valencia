@@ -83,7 +83,7 @@ tab_ciudadano, tab_mlops, tab_datos = st.tabs(["🗺️ Citizen Interface", "�
 with tab_ciudadano:
     with st.sidebar:
         st.header("🕒 System Status")
-        # Forzamos explícitamente el huso horario oficial de Valencia (Madrid)
+        #we use spain timezone
         from zoneinfo import ZoneInfo
         hora_actual = datetime.now(ZoneInfo("Europe/Madrid"))
         st.success(f"📅 **Date:** {hora_actual.strftime('%d-%m-%Y')}\n\n⌚ **Time:** {hora_actual.strftime('%H:%M:%S')}")
