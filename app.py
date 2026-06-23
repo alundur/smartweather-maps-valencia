@@ -92,6 +92,7 @@ with tab_ciudadano:
         st.header("🍂 Seasonal Optimization")
         estacion = st.radio("Urban Experience Mode:", ["Cool Routine (Summer)", "Sunny Paths (Winter)"])
         
+        st.markdown("---")
         st.header("📍 Waypoints")
         origen_txt = st.text_input("Origin (Street, square or building)", value=st.session_state["origen_confirmado"])
         destino_txt = st.text_input("Destination (Street, square or building)", value=st.session_state["destino_confirmado"])
