@@ -44,8 +44,14 @@ def formatear_tiempo_humano(minutos_totales):
 def geocodificar_direccion(query_texto):
     geolocator = Nominatim(user_agent="upv_edm_project_2026")
     try:
-        query_valencia = f"{query_texto.replace(',', '')}, Valencia, Spain"
-        return geolocator.geocode(query_valencia, timeout=6)
+        texto_puro = query_texto.strip()
+        resultado = geolocator.geocode(
+            texto_puro, 
+            country_codes="es", 
+            timeout=10
+        )
+        
+        return resultado
     except Exception:
         return None
 
