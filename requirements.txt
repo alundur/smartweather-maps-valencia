@@ -1,9 +1,13 @@
 streamlit
+streamlit-folium
+folium
 osmnx
 networkx
+shapely
 pandas
-geopandas
-requests
+numpy
+scikit-learn
+joblib
+geopy
 pyproj
-folium
-streamlit-folium
+altair
